@@ -1,0 +1,5 @@
+DEBUG_LOGIN = "LoginDebug"
+DEBUG_PASSWORD = "PasswordDebug"
+RELEASE_LOGIN = "LoginRelease"
+RELEASE_PASSWORD = "PasswordRelease
+API_KEY = "b9a3ce562c0843f39cd161528242612"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_required_title">Требуется разрешение</string>
+    <string name="permission_required_message">Для получения данных о текущей локации нужно разрешение на доступ к геолокации Пожалуйста, предоставьте его</string>
+    <string name="permission_denied_title">Разрешение отклонено</string>
+    <string name="permission_denied_message">Вы отклонили разрешение на геолокацию. Вы можете включить его в настройках приложения</string>
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="settings">Настройки</string>
+    <string name="get_location_error">Текущая геолокация недоступна</string>
+    <string name="provider_disabled_error">GPS и сети отключены. Включите их для определения местоположения</string>
+    <string name="latitude_fail_data">Неверно указана широта</string>
+    <string name="longitude_fail_data">Неверно указана долгота</string>
+    <string name="input_location_fail_data">Данные введены неверно</string>
+    <string name="set_location_button_text">Выбрать локацию</string>
+    <string name="latitude_text_label">Широта</string>
+    <string name="longitude_text_label">Долгота</string>
+    <string name="location_type_coordinates">Локация по координатам</string>
+    <string name="location_type_current">Текущая локация</string>
+</resources>

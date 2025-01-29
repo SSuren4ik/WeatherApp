@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.core.customView.WeatherParamWithIcon
+        android:id="@+id/windSpeedView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/humidityView"
+        app:layout_constraintEnd_toStartOf="@+id/tempFeelsLikeView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.core.customView.WeatherParamWithIcon
+        android:id="@+id/tempFeelsLikeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/precipitationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/windSpeedView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.core.customView.WeatherParamWithIcon
+        android:id="@+id/humidityView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/precipitationView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/windSpeedView" />
+
+    <com.core.customView.WeatherParamWithIcon
+        android:id="@+id/precipitationView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/humidityView"
+        app:layout_constraintTop_toBottomOf="@+id/tempFeelsLikeView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

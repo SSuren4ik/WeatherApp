@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_required_title">Permission Required</string>
+    <string name="permission_required_message">Location access permission is required to get current location data. Please grant it.</string>
+    <string name="permission_denied_title">Permission Denied</string>
+    <string name="permission_denied_message">You have denied location access permission. You can enable it in the app settings.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings">Settings</string>
+    <string name="get_location_error">Failed to get location</string>
+    <string name="provider_disabled_error">GPS and networks are disabled. Please enable them to determine location.</string>
+    <string name="latitude_fail_data">Incorrect latitude</string>
+    <string name="longitude_fail_data">Incorrect longitude</string>
+    <string name="input_location_fail_data">Incorrect location data</string>
+    <string name="set_location_button_text">Set location</string>
+    <string name="latitude_text_label">Latitude</string>
+    <string name="longitude_text_label">Longitude</string>
+    <string name="location_type_coordinates">Location for coordinates</string>
+    <string name="location_type_current">Current location</string>
+</resources>
