@@ -1,7 +1,7 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.TheWeatherApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowBackground">@drawable/gray_blue_gradient_background</item>
         <item name="android:textColor">@color/black</item>
     </style>
 

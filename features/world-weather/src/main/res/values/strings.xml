@@ -1,0 +1,9 @@
+<resources>
+    <string name="change_location_button_text">Выбрать локацию</string>
+    <string name="location_type_coordinates">Выбрать локацию</string>
+    <string name="latitude_text_label">Широта</string>
+    <string name="longitude_text_label">Долгота</string>
+    <string name="latitude_fail_data">Неверно указана широта</string>
+    <string name="longitude_fail_data">Неверно указана долгота</string>
+    <string name="choose_location_toast_text">Выберите локацию</string>
+</resources>

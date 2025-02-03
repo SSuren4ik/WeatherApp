@@ -1,8 +1,8 @@
 package com.di
 
 import com.core.utils.Router
-import com.login.di.LoginModule
-import com.utils.RouterImpl
+import com.weatherapp.login.di.LoginModule
+import com.utils.AppNavigationComponent
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -15,6 +15,6 @@ class UtilsModule {
     @Provides
     @Singleton
     fun provideRouter(): Router {
-        return RouterImpl()
+        return AppNavigationComponent()
     }
 }

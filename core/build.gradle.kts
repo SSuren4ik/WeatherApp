@@ -13,8 +13,6 @@ android {
     defaultConfig {
         minSdk = 26
         buildConfigField("String", "API_KEY", getApiKey())
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -47,9 +45,6 @@ dependencies {
     implementation(libs.dagger)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
 }
 
 fun getApiKey(): String {

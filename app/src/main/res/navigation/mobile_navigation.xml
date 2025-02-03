@@ -6,8 +6,14 @@
 
     <fragment
         android:id="@+id/current_weather"
-        android:name="com.presentation.WeatherFragment"
+        android:name="com.weatherapp.current_weather.presentation.WeatherFragment"
         android:label="CurrentWeather"
-        tools:layout="" />
+        tools:layout="@layout/fragment_current_weather" />
+
+    <fragment
+        android:id="@+id/world_weather"
+        android:name="com.weatherapp.world_weather.presentation.WorldWeatherFragment"
+        android:label="WorldWeather"
+        tools:layout="@layout/fragment_world_weather" />
 
 </navigation>

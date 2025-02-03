@@ -2,8 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:name="com.application.WeatherApplication"
+        android:name="com.application.CurrentWeatherApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -14,7 +18,7 @@
         android:theme="@style/Theme.TheWeatherApp"
         tools:targetApi="31">
         <activity
-            android:name="com.splash.SplashActivity"
+            android:name="com.weatherapp.splash.presentation.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +28,10 @@
         </activity>
         <activity
             android:name="com.mainScreen.MainActivity"
+            android:launchMode="singleTop" />
+            android:exported="false"
+        <activity
+            android:name="com.weatherapp.login.presentation.LoginActivity"
             android:exported="false" />
     </application>
 

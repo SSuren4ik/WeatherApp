@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="network_error">Не удалось получить данные с этой локации</string>
+    <string name="region">Регион</string>
+    <string name="start_temp">0°</string>
+    <string name="condition">Облачность</string>
+    <string name="feels_like">ощущается как:</string>
+    <string name="loading_data_message">Загрузка данных</string>
+    <string name="unknown">-</string>
+    <string name="degree">°</string>
+    <string name="precip_mm">мм</string>
+    <string name="procent">%</string>
+    <string name="wind_speed_km_h">км/ч</string>
+    <string name="humidity_label">Влажность</string>
+    <string name="wind_label">Скорость ветра</string>
+    <string name="precip_label">Осадки</string>
+    <string name="feels_like_temp_label">Ощущается как</string>
+    <string name="country">Страна</string>
+    <string name="permission_required_title">Требуется разрешение</string>
+    <string name="permission_required_message">Для получения данных о текущей локации нужно разрешение на доступ к геолокации Пожалуйста, предоставьте его</string>
+    <string name="permission_denied_title">Разрешение отклонено</string>
+    <string name="permission_denied_message">Вы отклонили разрешение на геолокацию. Вы можете включить его в настройках приложения</string>
+    <string name="ok">ОК</string>
+    <string name="cancel">Отмена</string>
+    <string name="settings">Настройки</string>
+    <string name="time_weather_label">Время</string>
+    <string name="day_status_weather_label">Время суток</string>
+    <string name="feels_like_weather_label">Ощущается</string>
+    <string name="temp_weather_label">Температура</string>
+</resources>
