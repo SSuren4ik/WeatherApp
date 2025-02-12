@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/small_margin_top"
+        android:fontFamily="@font/roboto_medium_italic"
         android:gravity="center"
         android:text="@string/region"
         android:textSize="@dimen/big_text_size" />
@@ -20,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/small_margin_top"
+        android:fontFamily="@font/roboto_medium_italic"
         android:gravity="center"
         android:text="@string/country"
         android:textSize="@dimen/small_text_size" />
@@ -30,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/small_margin_top"
+        android:fontFamily="@font/roboto_medium_italic"
         android:gravity="center"
         android:text="@string/start_temp"
         android:textSize="@dimen/big_text_size" />
@@ -40,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/small_margin_top"
+        android:fontFamily="@font/roboto_medium_italic"
         android:gravity="center"
         android:text="@string/condition"
         android:textSize="@dimen/small_text_size" />

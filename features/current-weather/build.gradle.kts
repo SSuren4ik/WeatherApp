@@ -21,28 +21,19 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
-    }
-    buildFeatures {
-        buildConfig = true
-        viewBinding = true
+        jvmTarget = "17"
     }
 }
 
 dependencies {
-    implementation(project(":core"))
-    implementation(project(":design-system"))
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.fragment.ktx)
+    implementation(projects.core)
     implementation(libs.dagger)
+    implementation(projects.features.currentWeather.data)
+    implementation(projects.features.currentWeather.presentation)
     kapt(libs.dagger.compiler)
-    implementation(libs.material)
-    implementation(libs.gson)
-    implementation(libs.androidx.activity)
-    implementation(libs.lifecycle.viewmodel.ktx)
+    api(projects.features.currentWeather.presentation)
 }

@@ -1,7 +1,7 @@
 package com.core.di
 
-import com.core.BuildConfig
 import com.core.domain.WeatherService
+import com.weatherapp.core.BuildConfig
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit

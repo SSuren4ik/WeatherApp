@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="get_location_error">Failed to get location</string>
+    <string name="provider_disabled_error">GPS and networks are disabled. Please enable them to determine location.</string>
+    <string name="latitude_fail_data">Incorrect latitude</string>
+    <string name="longitude_fail_data">Incorrect longitude</string>
+    <string name="input_location_fail_data">Incorrect location data</string>
+    <string name="set_location_button_text">Set location</string>
+    <string name="latitude_text_label">Latitude</string>
+    <string name="longitude_text_label">Longitude</string>
+    <string name="location_type_coordinates">Location for coordinates</string>
+    <string name="location_type_current">Current location</string>
+    <string name="refresh_data">Refresh data</string>
+    <string name="legacy_data_message">Data may be legacy</string>
+    <string name="none_legacy_message">Update data</string>
+    <string name="update_data_message">Data was updated</string>
+    <string name="none_last_data_message">Need updating data</string>
+    <string name="data_up_to_date">Data actual</string>
+
+</resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="network_error">Не удалось получить данные с этой локации</string>
+    <string name="network_error">Проблемы с сетью</string>
     <string name="region">Регион</string>
     <string name="start_temp">0°</string>
     <string name="condition">Облачность</string>

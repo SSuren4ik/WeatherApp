@@ -2,20 +2,25 @@ package com.weatherapp.world_weather.presentation
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.core.data.Hour
 import com.core.utils.ResourceProvider
 import com.weatherapp.world_weather.R
 import com.weatherapp.world_weather.databinding.WeatherHourDataItemBinding
 
-class WeatherDataRecyclerAdapter(private val provider: ResourceProvider) :
-    RecyclerView.Adapter<WeatherDataRecyclerAdapter.DataViewHolder>() {
+class WeatherDataRecyclerAdapter(
+    private val provider: ResourceProvider,
+) : RecyclerView.Adapter<WeatherDataRecyclerAdapter.DataViewHolder>() {
 
-    var dataList: List<Hour> = emptyList()
-        set(newValue) {
-            field = newValue
-            notifyDataSetChanged()
-        }
+    private var dataList: List<Hour> = emptyList()
+
+    fun setData(newDataList: List<Hour>, diffCallback: DiffCallback) {
+        diffCallback.setData(dataList, newDataList)
+        val diffResult = DiffUtil.calculateDiff(diffCallback)
+        dataList = newDataList
+        diffResult.dispatchUpdatesTo(this)
+    }
 
     class DataViewHolder(val binding: WeatherHourDataItemBinding) :
         RecyclerView.ViewHolder(binding.root)

@@ -6,11 +6,11 @@ import com.weatherapp.world_weather.domain.repository.LastLocationRepositoryInte
 class LastLocationRepositoryImpl(private val storage: LastLocationStorage) :
     LastLocationRepositoryInterface {
 
-    override suspend fun getLastLocation(): LastData {
+    override suspend fun getLastLocationData(): LastData {
         return storage.loadLocation()
     }
 
-    override suspend fun saveLastLocation(location: WeatherDataByHours) {
-        storage.saveLocation(location)
+    override suspend fun saveLastLocationData(data: WeatherDataByHours) {
+        storage.saveLocation(data)
     }
 }

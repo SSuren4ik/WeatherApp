@@ -26,11 +26,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         viewBinding = true
@@ -38,12 +38,12 @@ android {
 }
 
 dependencies {
-    implementation(project(":core"))
-    implementation(project(":design-system"))
-    implementation(project(":features:login"))
-    implementation(project(":features:splash"))
-    implementation(project(":features:current-weather"))
-    implementation(project(":features:world-weather"))
+    implementation(projects.core)
+    implementation(projects.designSystem)
+    implementation(projects.features.login)
+    implementation(projects.features.splash)
+    implementation(projects.features.worldWeather)
+    implementation(projects.features.currentWeather.presentation)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.navigation.fragment)

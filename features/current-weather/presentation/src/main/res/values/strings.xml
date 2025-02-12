@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="get_location_error">Текущая геолокация недоступна</string>
+    <string name="provider_disabled_error">GPS и сети отключены. Включите их для определения местоположения</string>
+    <string name="latitude_fail_data">Неверно указана широта</string>
+    <string name="longitude_fail_data">Неверно указана долгота</string>
+    <string name="input_location_fail_data">Данные введены неверно</string>
+    <string name="set_location_button_text">Выбрать локацию</string>
+    <string name="latitude_text_label">Широта</string>
+    <string name="longitude_text_label">Долгота</string>
+    <string name="location_type_coordinates">Локация по координатам</string>
+    <string name="location_type_current">Текущая локация</string>
+    <string name="refresh_data">Обновить данные</string>
+    <string name="legacy_data_message">Данные могут быть устаревшими</string>
+    <string name="none_legacy_message">Обновите данные</string>
+    <string name="update_data_message">Данные обновлены</string>
+    <string name="none_last_data_message">Нужно обновить данные</string>
+    <string name="data_up_to_date">Данные актуальны</string>
+    <string name="unexpected_error">непредвиденная ошибка</string>
+</resources>

@@ -55,9 +55,9 @@ class WorldWeatherViewModel(
         }
     }
 
-    private suspend fun handleLastLocationState(location: LastData) {
-        when (location) {
-            is LastData.CorrectData -> _weatherState.emit(RequestState.NormalState(location.data))
+    private suspend fun handleLastLocationState(lastData: LastData) {
+        when (lastData) {
+            is LastData.CorrectData -> _weatherState.emit(RequestState.NormalState(lastData.data))
             is LastData.InvalidData -> _lastDataState.emit(Unit)
         }
     }

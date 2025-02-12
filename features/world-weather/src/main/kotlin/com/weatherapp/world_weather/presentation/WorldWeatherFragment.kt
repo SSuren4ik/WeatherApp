@@ -1,6 +1,7 @@
 package com.weatherapp.world_weather.presentation
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,6 +28,7 @@ class WorldWeatherFragment : Fragment(), LocationSetListener {
 
     private lateinit var binding: FragmentWorldWeatherBinding
     private lateinit var adapter: WeatherDataRecyclerAdapter
+    private var diffCallback = DiffCallback()
     private val viewModel: WorldWeatherViewModel by viewModels {
         WorldWeatherViewModelFactory(
             requireContext().applicationContext as ResourceProvider
@@ -108,7 +110,7 @@ class WorldWeatherFragment : Fragment(), LocationSetListener {
     }
 
     private fun updateData(data: WeatherDataByHours) {
-        adapter.dataList = data.forecast.forecastday[0].hour
+        adapter.setData(data.forecast.forecastday[0].hour, diffCallback = diffCallback)
     }
 
     private fun showRegionAndTempData(data: WeatherDataByHours) {

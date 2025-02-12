@@ -5,7 +5,7 @@ import com.weatherapp.world_weather.domain.repository.LastLocationRepositoryInte
 
 class SaveLastLocationUseCase(private val repository: LastLocationRepositoryInterface) {
 
-    suspend fun execute(location: WeatherDataByHours) {
-        return repository.saveLastLocation(location)
+    suspend fun execute(data: WeatherDataByHours) {
+        return repository.saveLastLocationData(data)
     }
 }
